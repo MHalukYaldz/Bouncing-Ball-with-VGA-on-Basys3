@@ -114,7 +114,7 @@ The ball radius is set to 20 pixels.
 
 ## Ball Movement
 
-The ball starts near the center of the screen:
+The ball starts at the center of the screen:
 
 ```text
 Initial position: (320, 240)
