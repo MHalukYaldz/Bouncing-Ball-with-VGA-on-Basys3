@@ -49,33 +49,7 @@ The top-level entity of the project is `bouncing_ball_top`, which is defined in 
 
 ## Design Architecture
 
-```text
-                      +------------------+
-100 MHz Clock ------->|  Clock Divider   |
-                      +------------------+
-                               |
-                               | 25 MHz Pixel Clock
-                               v
-                      +------------------+
-                      |  VGA Controller  |
-                      +------------------+
-                        |      |       |
-                        |      |       +------> Active Video
-                        |      +--------------> Pixel Coordinates
-                        +---------------------> HSYNC / VSYNC
-                               |
-                 +-------------+-------------+
-                 |                           |
-                 v                           v
-        +------------------+        +------------------+
-        |   Ball Engine    |        |  Pixel Renderer  |
-        +------------------+        +------------------+
-                 |                           |
-                 | Ball Position             | RGB Output
-                 +-------------------------->|
-                                             v
-                                         VGA Monitor
-```
+<img width="811" height="331" alt="Bouncing Ball Architecture" src="https://github.com/user-attachments/assets/04d1bef9-8611-494e-add0-6865e6bf4dc4" />
 
 ## Design Overview
 
